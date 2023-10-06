@@ -1,0 +1,13 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "public/assets"
+public_folder: "src/assets"
+
+collections:
+  - name: "galerie"
+    label: "Galerie"
+    folder: "/src/_galerie"
+    fields:
+      - { label: "Image", name: "featuredImage", widget: "image" }

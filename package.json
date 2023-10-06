@@ -19,5 +19,8 @@
   "homepage": "https://github.com/antonia1309/TestEvaluation3#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "tina": "^0.3.23"
   }
 }
