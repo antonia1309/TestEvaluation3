@@ -8,6 +8,9 @@ public_folder: "src/assets"
 collections:
   - name: "galerie"
     label: "Galerie"
-    folder: "/src/_galerie"
+    folder: "src/_galerie" # Chemin relatif au répertoire racine du projet
+    create: true # Activer la création d'éléments
+    slug: "{{slug}}" # Générer automatiquement un slug pour chaque élément
     fields:
+      - { label: "Titre", name: "title", widget: "string" } # Ajoutez un champ de titre si nécessaire
       - { label: "Image", name: "featuredImage", widget: "image" }
