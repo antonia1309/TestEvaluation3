@@ -7,6 +7,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/admin");
   eleventyConfig.addPassthroughCopy("prices");
   eleventyConfig.addPassthroughCopy("./src/prices");
+  eleventyConfig.addPassthroughCopy("./src/thumbnails");
+  eleventyConfig.addPassthroughCopy("galerie");
 
 
 

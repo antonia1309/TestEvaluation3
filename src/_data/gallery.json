@@ -1,0 +1,75 @@
+[
+  {
+      "name" : "bapteme-1",
+      "category" : "baptême"
+  },
+  {
+      "name" : "bapteme-2",
+      "category" : "baptême"
+  },
+  {
+      "name" : "bebe-1",
+      "category" : "bébé"
+  },
+  {
+      "name" : "bebe-2",
+      "category" : "bébé"
+  },
+  {
+      "name" : "bebe-3",
+      "category" : "bébé"
+  },
+  {
+      "name" : "bebe-4",
+      "category" : "bébé"
+  },
+  {
+      "name" : "couple-1",
+      "category" : "couple"
+  },
+  {
+      "name" : "couple-2",
+      "category" : "couple"
+  },
+  {
+      "name" : "famille-1",
+      "category" : "famille"
+  },
+  {
+      "name" : "famille-2",
+      "category" : "famille"
+  },
+  {
+      "name" : "famille-3",
+      "category" : "famille"
+  },
+  {
+      "name" : "grossesse-1",
+      "category" : "grossesse"
+  },
+  {
+      "name" : "grossesse-2",
+      "category" : "grossesse"
+  },
+  {
+      "name" : "mariage-1",
+      "category" : "mariage"
+  },
+  {
+      "name" : "mariage-2",
+      "category" : "mariage"
+  },
+  {
+      "name" : "mariage-3",
+      "category" : "mariage"
+  },
+  {
+      "name" : "portrait-1",
+      "category" : "portrait"
+  },
+  {
+      "name" : "portrait-2",
+      "category" : "portrait"
+  }
+  
+]

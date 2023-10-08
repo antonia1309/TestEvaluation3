@@ -1,0 +1,9 @@
+<div class="photos" id="gallery">     
+    {% for thumbnails in collections.thumbnails %}   
+      {% if thumbnails.data.category == category %}             
+        <div class="item active"> 
+            <img class="photo active" src="/assets/{{thumbnails.data.name}}.jpg" alt="photo faite par Charles Cantin" >
+        </div>
+      {% endif %}
+    {% endfor %}
+</div>

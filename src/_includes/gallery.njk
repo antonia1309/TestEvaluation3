@@ -1,0 +1,12 @@
+{% extends "layout.njk" %}
+
+    <ul class="items" id="filters">   
+        {% for category in collections.categories %}    
+          <li class="item active" id="tout"
+            <a class="photo active" href="{{category.url | url}}">
+                {{category.data.name}}
+            </a>></li>
+        
+        {% endfor %}
+    </ul>
+    <div id="modal-image"><div id="display-image"></div></div>
