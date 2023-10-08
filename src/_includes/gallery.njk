@@ -1,23 +1,14 @@
-{% extends "layout.njk" %}
-{% block content %}
-<div class="gallery">
-  <h1 class="galerieTitle">Galerie photos</h1>
-  <ul class="items" id="filters">
-    <li class="item active" id="tout">Tout</li>
-    <li class="item" id="mariage">Mariage</li>
-    <li class="item" id="famille">Famille</li>
-    <li class="item" id="bebe">Bébé</li>
-    <li class="item" id="couple">Couple</li>
-    <li class="item" id="bapteme">Baptême</li>
-    <li class="item" id="grossesse">Grossesse</li>
-    <li class="item" id="portrait">Portrait</li>
-  </ul>
-  <div class="photos" id="gallery">
-    {% for thumbnail in collections.thumbnails %}
-      <img class="photo active" data-{{thumbnail.data.category}} src="/assets/{{thumbnail.data.name}}.jpg" alt="photo">
-    {% endfor %}
-  </div>
-</div>
-<script src="/script.js"></script>
-{% endblock %}
 
+{% for category in collections.categories %}    <h1 class="galerieTitle"> Galerie photos </h1>
+<section class="gallery">
+    <ul class="items" id="filters">    
+
+        <li class="item active" id="{{thumbnails.data.category}}">
+            <a href="{{category.url | url}}">
+                {{category.data.name}}
+            </a>
+        </li>
+        
+    </ul>
+    {% endfor %}
+    
