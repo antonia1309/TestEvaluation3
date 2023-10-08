@@ -1,14 +1,15 @@
 
-{% for category in collections.categories %}    <h1 class="galerieTitle"> Galerie photos </h1>
 <section class="gallery">
-    <ul class="items" id="filters">    
-
-        <li class="item active" id="{{thumbnails.data.category}}">
-            <a href="{{category.url | url}}">
-                {{category.data.name}}
-            </a>
-        </li>
-        
-    </ul>
+  <h1 class="galerieTitle">Galerie photos</h1>
+  <ul class="items" id="filters">
+    <li class="item active" id="tout">Tout</li>
+    <!-- Ajoutez ici d'autres catégories en fonction de vos besoins -->
+  </ul>
+  <div class="photos" id="gallery">
+    {% for thumbnail in collections.thumbnails %}
+      <img class="photo active" data-{{thumbnail.data.category}} src="{{thumbnail.data.path}}" alt="photo">
     {% endfor %}
+  </div>
+</section>
+
     
