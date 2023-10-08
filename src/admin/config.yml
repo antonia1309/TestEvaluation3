@@ -6,15 +6,29 @@ media_folder: "public/assets"
 public_folder: "src/assets"
 
 collections:
-   - name: "thumbnails" # Used in routes, e.g., /admin/collections/blog
-    label: "Image" # Used in the UI
+  - name: "thumbnails" # Used in routes, e.g., /admin/collections/blog
+    label: "Thumbnails" # Used in the UI
     folder: "src/thumbnails" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Image", name: "path", widget: "image", choose_url : false}
-      - {label: "Nom du fichier", name: "name", widget: "string"}
-      - {label: "Catégorie", name: "category", widget: "select", options : ["mariage", "grossesse", "famille", "baptême", "couple", "portrait", "bébé"]}
+      - { label: "Image", name: "path", widget: "image", choose_url: false }
+      - { label: "Nom du fichier", name: "name", widget: "string" }
+      - {
+          label: "Catégorie",
+          name: "category",
+          widget: "select",
+          options:
+            [
+              "mariage",
+              "grossesse",
+              "famille",
+              "baptême",
+              "couple",
+              "portrait",
+              "bébé",
+            ],
+        }
 
   - name: "prices" # Used in routes, e.g., /admin/collections/blog
     label: "Tarif" # Used in the UI
