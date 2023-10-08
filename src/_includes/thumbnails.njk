@@ -1,7 +1,7 @@
 <div class="gallery__thumbnails row">
   {% for thumbnail in collections.thumbnails %}
-    <div class="col-sm-4 col-md-3">
-      <img class="thumbnails" src="{{thumbnail.data.path}}" alt="photo faite par Charles Cantin">
+    <div class="col-sm-4 col-md-3" data-category="{{ thumbnail.data.category }}>
+      <img class="thumbnails" src="{{ thumbnail.data.image | url }}" alt="{{ thumbnail.data.name }}">
     </div>
   {% endfor %}
 </div>
