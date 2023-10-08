@@ -14,3 +14,18 @@ collections:
     fields:
       - { label: "Titre", name: "title", widget: "string" } # Ajoutez un champ de titre si nécessaire
       - { label: "Image", name: "featuredImage", widget: "image" }
+  - name: "prices" # Used in routes, e.g., /admin/collections/blog
+    label: "Tarif" # Used in the UI
+    folder: "src/prices" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Prestation", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - {
+          label: "Description complémentaire",
+          name: "description2",
+          widget: "string",
+          required: false,
+        }
+      - { label: "Prix", name: "price", widget: "string" }

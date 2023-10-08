@@ -1,0 +1,10 @@
+<div class="tarifsContent">
+  {% for price in prices %}
+    </div class="tarifs">
+          <h2>{{ price.data.title }}</span></p> 
+          <p>{{ price.data.description }}</p>
+          <p>{{ price.data.price }} <br>
+          {{ price.data.description2 }}
+          </p>
+  {% endfor %}
+</div>
