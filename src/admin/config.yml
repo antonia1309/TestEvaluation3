@@ -28,7 +28,7 @@ collections:
               "portrait",
               "bébé",
             ],
-            , label: "Catégorie"
+    
         }
 
   - name: "prices" # Used in routes, e.g., /admin/collections/blog
