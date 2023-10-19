@@ -1,5 +1,5 @@
 ---
-title: test pur nous tous
+title: TEST
 description: a faire avec n importe qui
 price: 120€
 ---
