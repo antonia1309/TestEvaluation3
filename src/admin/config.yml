@@ -39,10 +39,10 @@ collections:
               "mariage",
               "grossesse",
               "famille",
-              "baptême",
+              "bapteme",
               "couple",
               "portrait",
-              "bébé",
+              "bebe",
             ],
         }
       - { label: "Image", name: "path", widget: "image", choose_url: false }
