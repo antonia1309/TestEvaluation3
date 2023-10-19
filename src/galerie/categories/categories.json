@@ -1,5 +1,0 @@
-{
-  "tags" : "categories",
-  "title": "Galerie photo",
-  "layout": "gallery.njk"
-}
