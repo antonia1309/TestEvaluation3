@@ -1,5 +1,5 @@
 ---
-name: famille-3
+name: famille-1
 category: famille
-path: /assets/famille-3.jpg
+path: /assets/famille-1.jpg
 ---
