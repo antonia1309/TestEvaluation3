@@ -1,6 +1,6 @@
 ---
 name: bebe-4
-category: bébé
+category: bebe
 path: /src/assets/bebe-4.jpg
 ---
 
