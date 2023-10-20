@@ -1,6 +1,6 @@
 ---
 title: TEST
-description: a faire avec n importe qui
+description: test
 price: 120€
 ---
 
