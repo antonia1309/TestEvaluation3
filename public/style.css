@@ -202,8 +202,8 @@ form{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70vw;
-  height: 70vh;
+  min-width: 70vw;/*a voir pr ajouter aussi*/
+  min-height: 70vh; /*a ajouter*/
   margin: 0 auto;
 }
 
