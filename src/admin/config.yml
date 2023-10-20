@@ -1,6 +1,8 @@
 backend:
   name: git-gateway
+  repo: "Antonia/testevaluation3.netlify.app"
   branch: master
+  open_authoring: true
 
 media_folder: "public/assets"
 public_folder: "src/assets"
@@ -9,7 +11,13 @@ collections:
   - name: "prices" # Used in routes, e.g., /admin/collections/blog
     label: "Tarif" # Used in the UI
     folder: "src/prices" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
+    auth:
+      read: true
+      create: true
+      update: true
+      delete: true
+      upload: true
+    #create: true  Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Prestation", name: "title", widget: "string" }
@@ -25,7 +33,13 @@ collections:
   - name: "galleries" # Used in routes, e.g., /admin/collections/blog
     label: "Image" # Used in the UI
     folder: "src/galleries" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
+    auth:
+      read: true
+      create: true
+      update: true
+      delete: true
+      upload: true
+    #create: true  Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       # - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk"}
